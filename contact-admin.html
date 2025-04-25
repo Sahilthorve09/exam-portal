@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Admin</title>
+  <link rel="stylesheet" href="contact-admin.css" />
+  <link rel="icon" type="image/png" href="logo.png"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">Alard <span>Exams</span> Portal</div>
+    <div class="top-info">
+      <div class="student-id">Student ID: <strong>ST0065</strong></div>
+      <div class="welcome">Welcome To <strong>Student Name</strong></div>
+      <div class="logout">Account <a href="index.html">Logout</a></div>
+    </div>
+  </header>
+
+  <nav class="path">
+    Home &gt; <span>Contact Admin</span>
+  </nav>
+
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h3><i class="fas fa-user"></i> Student Menu</h3>
+      <ul>
+        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> My Dashboard</a></li>
+        <li><a href="inbox.html"><i class="fas fa-envelope"></i> My Inbox</a></li>
+        <li class="active"><a href="dashboard.html"><i class="fas fa-headset"></i> Contact Admin</a></li>
+        <li><a href="#"><i class="fas fa-file-alt"></i> My Exams</a></li>
+        <li><a href="#"><i class="fas fa-chart-line"></i> Exam Reports</a></li>
+        <li><a href="#"><i class="fas fa-video"></i> Study Materials</a></li>
+        <li><a href="#"><i class="fas fa-pen"></i> Live Exams</a></li>
+        <li><a href="#"><i class="fas fa-poll"></i> Live Exam Reports</a></li>
+        <li><a href="#"><i class="fas fa-question-circle"></i> Question Bookmarks</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="card">
+        <h2><i class="fas fa-headset"></i> Contact <span style="color:#f44336;">Admin</span></h2>
+
+        <form class="contact-form">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
