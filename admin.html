@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">Apna <span>Exams</span> Admin</div>
+    <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+    <div class="top-info">
+      <span><i class="fas fa-user-shield"></i> Welcome, Admin</span>
+      <span><i class="fas fa-sign-out-alt"></i> <a href="index.html">Logout</a></span>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">Home &gt; Dashboard</nav>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">✖</div>
+      <h3><i class="fas fa-cogs"></i> Admin Panel</h3>
+      <ul>
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Post Notification</a></li>
+        <li><a href="#">Upload Timetable</a></li>
+        <li><a href="#">Upload Hall Tickets</a></li>
+        <li><a href="#">Student List</a></li>
+        <li><a href="#">Publish Results</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="card">
+        <h2>📊 Admin Overview</h2>
+        <p>Welcome to the admin dashboard. Use the menu to manage exam notifications, timetables, hall tickets, and results.</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
