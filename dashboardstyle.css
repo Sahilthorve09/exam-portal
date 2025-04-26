@@ -161,3 +161,115 @@ body {
     background-color: #003f7d;
   }
   
+  /* ------------------- RESPONSIVE DESIGN ------------------- */
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .top-info {
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+  }
+
+  .path {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .sidebar h3 {
+    font-size: 1rem;
+  }
+
+  .sidebar ul li {
+    padding: 10px 15px;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .buy-btn {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #003366;
+    margin-top: 0.5rem;
+  }
+
+  .sidebar {
+    display: none;
+    width: 100%;
+    background-color: #003366;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    display: block;
+  }
+
+  .dashboard-container {
+    flex-direction: column;
+  }
+}
+
+/* Close button (for mobile sidebar) */
+.close-btn {
+  display: none;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
+  }
+}

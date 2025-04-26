@@ -12,6 +12,7 @@
 <body>
   <header class="top-bar">
     <div class="logo">Alard <span>Exams</span> Portal</div>
+    <div class="hamburger" onclick="toggleSidebar()">&#9776;</div> <!-- THIS LINE -->
     <div class="top-info">
       <div class="student-id">Student ID: <strong>ST0065</strong></div>
       <div class="welcome">Welcome To <strong>Student Name</strong></div>
@@ -24,18 +25,17 @@
   </nav>
 
   <div class="dashboard">
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">✖</div>
       <h3><i class="fas fa-user"></i> Student Menu</h3>
       <ul>
-        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> My Dashboard</a></li>
-        <li><a href="inbox.html"><i class="fas fa-envelope"></i> My Inbox</a></li>
-        <li class="active"><a href="dashboard.html"><i class="fas fa-headset"></i> Contact Admin</a></li>
-        <li><a href="#"><i class="fas fa-file-alt"></i> My Exams</a></li>
-        <li><a href="#"><i class="fas fa-chart-line"></i> Exam Reports</a></li>
-        <li><a href="#"><i class="fas fa-video"></i> Study Materials</a></li>
-        <li><a href="#"><i class="fas fa-pen"></i> Live Exams</a></li>
-        <li><a href="#"><i class="fas fa-poll"></i> Live Exam Reports</a></li>
-        <li><a href="#"><i class="fas fa-question-circle"></i> Question Bookmarks</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="inbox.html">Inbox</a></li>
+        <li class="active"><a href="contact-admin.html">Contact Admin</a></li>
+        <li><a href="my-exams.html">My Exams</a></li>
+        <li><a href="exam-report.html">Exam Reports</a></li>
+        <li><a href="study-materials.html">Study Materials</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
       </ul>
     </aside>
 
@@ -55,5 +55,10 @@
       </div>
     </main>
   </div>
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>  
 </body>
 </html>

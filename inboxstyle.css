@@ -140,4 +140,70 @@
   table tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #003366;
+  }
+  
+  .close-btn {
+    display: none;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .top-info {
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .dashboard {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      display: none;
+      width: 100%;
+      background-color: #003366;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 1000;
+    }
+  
+    .sidebar.active {
+      display: block;
+    }
+  
+    .close-btn {
+      display: block;
+      color: white;
+    }
+  
+    .main-content {
+      padding: 1rem;
+    }
+  
+    .table-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
   
